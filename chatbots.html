@@ -117,9 +117,25 @@ body {
     </div>
 </div>
 
+<div id="messages"></div>
+<input id="input" type="text" placeholder="Digite sua mensagem..." />
+
 <script>
 const messages = document.getElementById("messages");
 const input = document.getElementById("input");
+
+// Mensagem de boas-vindas ao carregar a página
+window.addEventListener("load", () => {
+    const welcomeText = `Bem-vindo ao chatbot modeBRAVLabs!
+Aqui você pode encontrar:
+- Informações sobre o CEO Henrique João Muianga
+- Dicas de desenvolvimento pessoal e produtividade
+- Como gerir ansiedade e parar de se preocupar com pessoas
+- Entender depressão e suas causas
+- Conselhos para se tornar mais forte como homem ou mulher
+Digite sua dúvida ou assunto que quer explorar.`;
+    addMessage(welcomeText, "bot");
+});
 
 function sendMessage() {
     const text = input.value.trim();
@@ -144,18 +160,66 @@ function addMessage(text, sender) {
 function botReply(text) {
     let reply = "Não entendi. Pode reformular?";
 
-    if (text.toLowerCase().includes("oi")) reply = "Olá! Como posso ajudar?";
-    if (text.toLowerCase().includes("python")) reply = "Python é excelente para automação, IA e web.";
-    if (text.toLowerCase().includes("dev_attach")) reply = "Desenvolvimento web envolve HTML, CSS, JS e frameworks.";
-    if (text.toLowerCase().includes("ia")) reply = "Inteligência Artificial está revolucionando o mundo.";
+    const lowerText = text.toLowerCase();
+
+    // Saudações
+    if (lowerText.includes("oi") || lowerText.includes("olá")) {
+        reply = "Olá! Eu sou o assistente da modeBRAVLabs. Sobre o que você quer conversar hoje?";
+    }
+
+    // Sobre Python
+    if (lowerText.includes("python")) {
+        reply = "Python é excelente para automação, IA e desenvolvimento web. Podemos ensinar a usar na prática.";
+    }
+
+    // Sobre desenvolvimento web
+    if (lowerText.includes("dev_attach") || lowerText.includes("desenvolvimento web")) {
+        reply = "Desenvolvimento web envolve HTML, CSS, JS e frameworks modernos. É uma habilidade essencial para criar software de alta performance.";
+    }
+
+    // Inteligência Artificial
+    if (lowerText.includes("ia") || lowerText.includes("inteligência artificial")) {
+        reply = "Inteligência Artificial está revolucionando o mundo. Podemos usar para melhorar produtividade, análise de dados e automação.";
+    }
+
+    // Sobre modeBRAVLabs
+    if (lowerText.includes("modebravlabs")) {
+        reply = "modeBRAVLabs é uma empresa dedicada ao uso da tecnologia para melhorar foco, evolução pessoal, produtividade e persuasão.";
+    }
+
+    // Sobre o CEO
+    if (lowerText.includes("henrique joão muianga") || lowerText.includes("ceo")) {
+        reply = "Henrique João Muianga é o CEO da modeBRAVLabs, liderando projetos que unem tecnologia e desenvolvimento pessoal.";
+    }
+
+    // Ansiedade
+    if (lowerText.includes("ansiedade")) {
+        reply = "Gerir a ansiedade envolve técnicas de respiração, mindfulness, exercícios físicos e manter uma rotina equilibrada.";
+    }
+
+    // Preocupação com opinião alheia
+    if (lowerText.includes("preocupar com pessoas") || lowerText.includes("opinião dos outros")) {
+        reply = "Para parar de se preocupar com a opinião dos outros, concentre-se em seus objetivos, pratique autoconhecimento e estabeleça limites saudáveis.";
+    }
+
+    // Depressão
+    if (lowerText.includes("depressão")) {
+        reply = "Depressão é uma condição mental complexa que pode surgir devido a fatores genéticos, bioquímicos, psicológicos ou sociais. Procurar ajuda profissional é essencial.";
+    }
+
+    // Força pessoal
+    if (lowerText.includes("ser forte") || lowerText.includes("homem") || lowerText.includes("mulher")) {
+        reply = "Ser forte envolve desenvolver resiliência, inteligência emocional, disciplina e cuidar da mente e corpo. Todos podem evoluir nesse sentido.";
+    }
 
     addMessage(reply, "bot");
 }
 
+// Enviar mensagem ao apertar Enter
 input.addEventListener("keypress", function(e) {
     if (e.key === "Enter") sendMessage();
 });
-</script>
-
+    </script>
 </body>
 </html>
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modebravhlabs</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="profile2.jpg" alt="Perfil">
+    <h1>Modebravhlabs</h1>
+    <div class="auth-buttons">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+      <a href="chatbots.html" class="chatbots-btn">Chatbot</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="inicio.html">Início</a>
+    <a href="CPM.html">Cursos</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="contactos.html">Contacto</a>
+    <a href="publicacoes.html">Publicações</a>
+  </nav>
+
+  <div class="card">
+    <h2>Bem-vindo ao Modebravhlabs</h2>
+     <p><strong>Transforme sua mente em uma maquina de sucesso hoje!</strong></p> 
+       <p>Domine o a sua mente e seja produtivo com nossos cursos, ebooks completos.</p>
+        <p>Aprenda a criar habitos saudaveis, evoluir e conquistar tudo que voce quer.</p>
+       <p><strong>👉 Inscreva-se agora e dê o próximo passo rumo ao futuro brilhante!</strong></p>
+  </div>
+
+  <div class="cta-section">
+    <img src="modebravhlabs.png" alt="Cartaz Promocional">
+    <a href="CPM.html" class="btn-CPM">Saiba Mais</a>
+  </div>
+
+  <footer>
+    <div class="socials">
+      <a href="https://instagram.com/HenryBrain05" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+      <a href="https://www.youtube.com/@henrybrains" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      <a href="https://www.linkedin.com/in/modebravhlabs-undefined-5204933ab" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://www.tiktok.com/@henriquesjoao11" target="_blank">
+   <i class="fa-brands fa-tiktok"></i>
+ </a>
+    </div>
+    <p>&copy; 2026 Modebravhlabs - Todos os direitos reservados.</p>
+  </footer>
+
+ <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #222;
+      color: white;
+    }
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    header h1 {
+      flex: 1;
+      text-align: center;
+      margin: 0;
+    }
+    .auth-buttons {
+      display: flex;
+      gap: 10px;
+    }
+    .auth-buttons a {
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+.chatbots-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(22, 4, 190);
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 100px;
+}
+
+.chatbots-btn:hover {
+    background: rgb(10, 2, 120);
+}
+
+    .card {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      background-image: url("CMED_fundo.png");
+    }
+
+    .card p {
+             color: white;
+                 }
+
+    .card h2 {
+              color: white;
+                  }
+
+
+    .cta-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .cta-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .cta-section a {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .socials {
+      margin-bottom: 10px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header h1 {
+        margin: 10px 0;
+      }
+      .auth-buttons {
+        justify-content: center;
+      }
+      nav {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+
+<!-- Scripts -->
+ <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>

@@ -126,7 +126,7 @@ const sendBtn = document.getElementById("sendBtn");
 window.addEventListener("load", () => {
     const welcomeText = `Bem-vindo ao chatbot modeBRAVLabs!
 Aqui você pode encontrar:
-- Informações sobre o CEO Henrique João Muianga
+- Informações sobre Henrique João Muianga
 - Dicas de desenvolvimento pessoal e produtividade
 - Como gerir ansiedade e parar de se preocupar com pessoas
 - Entender depressão e suas causas
@@ -163,16 +163,116 @@ function botReply(text) {
 
     const lowerText = text.toLowerCase();
 
-    if (lowerText.includes("oi") || lowerText.includes("olá")) reply = "Olá! Eu sou o assistente da modeBRAVLabs. Sobre o que você quer conversar hoje?";
-    if (lowerText.includes("python")) reply = "Python é excelente para automação, IA e desenvolvimento web.";
-    if (lowerText.includes("dev_attach") || lowerText.includes("desenvolvimento web")) reply = "Desenvolvimento web envolve HTML, CSS, JS e frameworks modernos.";
-    if (lowerText.includes("ia") || lowerText.includes("inteligência artificial")) reply = "Inteligência Artificial está revolucionando o mundo.";
-    if (lowerText.includes("modebravlabs")) reply = "modeBRAVLabs é uma empresa dedicada ao uso da tecnologia para melhorar foco, evolução pessoal, produtividade e persuasão.";
-    if (lowerText.includes("henrique joão muianga") || lowerText.includes("ceo")) reply = "Henrique João Muianga é o CEO da modeBRAVLabs, liderando projetos que unem tecnologia e desenvolvimento pessoal.";
-    if (lowerText.includes("ansiedade")) reply = "Gerir a ansiedade envolve técnicas de respiração, mindfulness, exercícios físicos e manter uma rotina equilibrada.";
-    if (lowerText.includes("preocupar com pessoas") || lowerText.includes("opinião dos outros")) reply = "Para parar de se preocupar com a opinião dos outros, concentre-se em seus objetivos, pratique autoconhecimento e estabeleça limites saudáveis.";
-    if (lowerText.includes("depressão")) reply = "Depressão é uma condição mental complexa que pode surgir devido a fatores genéticos, bioquímicos, psicológicos ou sociais. Procurar ajuda profissional é essencial.";
-    if (lowerText.includes("ser forte") || lowerText.includes("homem") || lowerText.includes("mulher")) reply = "Ser forte envolve desenvolver resiliência, inteligência emocional, disciplina e cuidar da mente e corpo.";
+   // Saudações e Identidade
+if (lowerText.includes("oi") || lowerText.includes("olá")) 
+  reply = "Olá! Eu sou o assistente da modeBRAVLabs. Sobre o que você quer conversar hoje?";
+
+if (lowerText.includes("modebravlabs")) 
+  reply = "modeBRAVLabs é uma empresa dedicada ao uso da tecnologia para melhorar foco, evolução pessoal, produtividade e persuasão.";
+
+if (lowerText.includes("henrique joão muianga") || lowerText.includes("ceo")) 
+  reply = "Henrique João Muianga é o CEO da modeBRAVLabs, liderando projetos que unem tecnologia e desenvolvimento pessoal.";
+
+// Tecnologia
+if (lowerText.includes("python")) 
+  reply = "Python é excelente para automação, IA e desenvolvimento web.";
+
+if (lowerText.includes("dev_attach") || lowerText.includes("desenvolvimento web")) 
+  reply = "Desenvolvimento web envolve HTML, CSS, JS e frameworks modernos.";
+
+if (lowerText.includes("ia") || lowerText.includes("inteligência artificial")) 
+  reply = "Inteligência Artificial está revolucionando o mundo.";
+
+// Saúde Mental
+if (lowerText.includes("ansiedade")) 
+  reply = "Gerir a ansiedade envolve técnicas de respiração, mindfulness, exercícios físicos e manter uma rotina equilibrada.";
+
+if (lowerText.includes("depressão")) 
+  reply = "Depressão é uma condição mental complexa que pode surgir devido a fatores genéticos, bioquímicos, psicológicos ou sociais. Procurar ajuda profissional é essencial.";
+
+if (lowerText.includes("saúde mental")) 
+  reply = "Cuidar da saúde mental envolve equilíbrio entre trabalho, descanso, relações sociais e autocuidado.";
+
+if (lowerText.includes("terapia")) 
+  reply = "A terapia é um espaço seguro para compreender emoções, desenvolver estratégias e fortalecer o bem-estar.";
+
+if (lowerText.includes("mindfulness")) 
+  reply = "Mindfulness é a prática de atenção plena, que ajuda a reduzir ansiedade e aumentar foco.";
+
+// Desenvolvimento Pessoal
+if (lowerText.includes("autoconhecimento")) 
+  reply = "Autoconhecimento é a base do desenvolvimento pessoal. Conhecer seus valores e limites fortalece sua identidade.";
+
+if (lowerText.includes("disciplina")) 
+  reply = "Disciplina é fazer o que precisa ser feito mesmo quando não há motivação. É o alicerce da evolução.";
+
+if (lowerText.includes("resiliência")) 
+  reply = "Resiliência é a capacidade de se recuperar diante das dificuldades e aprender com elas.";
+
+if (lowerText.includes("ser forte") || lowerText.includes("homem") || lowerText.includes("mulher")) 
+  reply = "Ser forte envolve desenvolver resiliência, inteligência emocional, disciplina e cuidar da mente e corpo.";
+
+if (lowerText.includes("propósito")) 
+  reply = "Ter um propósito claro dá direção e sentido à vida, fortalecendo motivação e resiliência.";
+
+// Produtividade
+if (lowerText.includes("produtividade")) 
+  reply = "Produtividade não é fazer mais, mas sim fazer melhor. Foque em prioridades e elimine distrações.";
+
+if (lowerText.includes("pomodoro")) 
+  reply = "A técnica Pomodoro consiste em ciclos de 25 minutos de foco seguidos de 5 minutos de pausa.";
+
+if (lowerText.includes("organização")) 
+  reply = "Organização é chave para produtividade. Use listas, calendários e defina prioridades.";
+
+if (lowerText.includes("rotina matinal")) 
+  reply = "Uma rotina matinal estruturada aumenta energia e foco para o resto do dia.";
+
+// Persuasão e Comunicação
+if (lowerText.includes("persuasão")) 
+  reply = "Persuasão é a arte de comunicar ideias de forma clara e convincente, com empatia e lógica.";
+
+if (lowerText.includes("comunicação eficaz")) 
+  reply = "Comunicação eficaz envolve clareza, empatia e escuta ativa.";
+
+if (lowerText.includes("linguagem corporal")) 
+  reply = "A linguagem corporal transmite confiança e credibilidade. Mantenha postura aberta e contato visual.";
+
+if (lowerText.includes("argumentação")) 
+  reply = "Argumentação sólida combina lógica, emoção e credibilidade para convencer de forma ética.";
+
+// Procrastinação
+if (lowerText.includes("procrastinação")) 
+  reply = "Procrastinação é adiar o que precisa ser feito. Divida tarefas em etapas menores e estabeleça prazos curtos.";
+
+if (lowerText.includes("procrastinação acadêmica")) 
+  reply = "Procrastinação acadêmica pode ser vencida com planejamento, metas curtas e recompensas.";
+
+if (lowerText.includes("procrastinação no trabalho")) 
+  reply = "No trabalho, procrastinação gera estresse. Divida tarefas e elimine distrações digitais.";
+
+// Pornografia
+if (lowerText.includes("pornografia")) 
+  reply = "O consumo excessivo de pornografia pode gerar dependência e distorcer expectativas sobre relacionamentos.";
+
+if (lowerText.includes("vício em pornografia")) 
+  reply = "O vício em pornografia pode afetar relacionamentos e autoestima. Buscar equilíbrio é essencial.";
+
+if (lowerText.includes("superar pornografia")) 
+  reply = "Superar o consumo excessivo envolve autocontrole, apoio psicológico e novos hábitos saudáveis.";
+
+// Opinião Alheia
+if (lowerText.includes("opinião dos outros")) 
+  reply = "A opinião dos outros não define seu valor. Foque em seus objetivos e pratique autoconfiança.";
+
+if (lowerText.includes("críticas")) 
+  reply = "Críticas podem ser construtivas ou destrutivas. Aprenda a filtrar e usar apenas o que agrega.";
+
+if (lowerText.includes("comparação")) 
+  reply = "Comparar-se constantemente gera insegurança. Cada pessoa tem seu próprio ritmo de evolução.";
+
+if (lowerText.includes("preocupar com pessoas")) 
+  reply = "Para parar de se preocupar com a opinião dos outros, concentre-se em seus objetivos e estabeleça limites saudáveis.";
 
     addMessage(reply, "bot");
 }
@@ -187,4 +287,5 @@ sendBtn.addEventListener("click", sendMessage);
 </script>
 </body>
 </html>
+
 

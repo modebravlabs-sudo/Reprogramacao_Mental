@@ -78,12 +78,7 @@
   <header>
     <h1>🎬Vídeos</h1>
   </header>
-
-  <nav>
-    <a href="CPM.html" target="_blank">Anterior</a>
-    <a href="publicacoes.html" target="_blank">Seguinte</a>
-  </nav>
-
+  
   <!-- Vídeos -->
   <div class="video-container">
     <video controls>
@@ -111,7 +106,7 @@
 
   <div class="video-container">
     <video controls>
-      <source src="Imagina_sua_mente_como_computador.mp4" type="video/mp4">
+      <source src="Imagina_sua_mente_omo_computador.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -126,30 +121,42 @@
       <source src="consequência_de_estresse_prolongado.mp4" type="video/mp4">
     </video>
   </div>
+  
+<script>
+const videos = document.querySelectorAll("video");
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.play();
+    } else {
+      entry.target.pause();
+    }
+  });
+}, {
+  threshold: 0.6 // 60% visível já ativa
+});
+
+videos.forEach(video => {
+  observer.observe(video);
+});
+</script>
+  
+<nav>
+    <a href="CPM.html" target="_blank">Anterior</a>
+    <a href="publicacoes.html" target="_blank">Seguinte</a>
+    </nav>
   <footer>
     <p>&copy; 2026 - ModeBRAVHLabs | Todos os direitos reservados</p>
   </footer>
 
-  <!-- Script para pausar vídeos fora da tela -->
-  <script>
-    const videos = document.querySelectorAll("video");
-
-    window.addEventListener("scroll", () => {
-      videos.forEach(video => {
-        const rect = video.getBoundingClientRect();
-        const totalmenteVisivel = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-        if (!totalmenteVisivel) {
-          video.pause();
-        } else {
-          video.play();
         }
       });
     });
   </script>
 </body>
 </html>
+
 
 
 

@@ -7,120 +7,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: black;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 6px;
-      text-align: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin: 20px 0;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      background: blue;
-      padding: 10px 20px;
-      border-radius: 25px;
-      font-weight: 700;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: darkblue;
-    }
-
-    .video-container {
-      height: 100vh;
-      overflow-y: scroll;
-      scroll-snap-type: y mandatory;
-    }
-
-    .video-container video {
-      height: 100vh;
-      scroll-snap-align: start;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #333;
-      color: #fff;
-    }
-
-    /* Responsividade */
-    @media (max-width: 768px) {
-      .video-container video {
-        max-width: 100%;
-      }
-    }
-  </style>
-<header>
-  <h1>feed🎬</h1>
-</header>
-  <!-- Vídeos -->
-  <div class="video-container">
-    <video controls>
-      <source src="tua_mente_pode_ser_teu_maior_inimigo.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="Gerindo_energia_mental.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="Pense_na_ansiedade_como_eletrecidade.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="O_que_e_viver_no_automatico.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="Imagina_sua_mente_omo_computador.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="efeito_da_pornografia.mp4" type="video/mp4">
-    </video>
-  </div>
-
-  <div class="video-container">
-    <video controls>
-      <source src="consequência_de_estresse_prolongado.mp4" type="video/mp4">
-    </video>
-  </div>
   
-<script>
+<div class="container">
+  <div class="video-item">
+    <video src="Produtividade.mp4" muted loop playsinline></video>
+  </div>
+
+  <div class="video-item">
+    <video src="efeito_da_pornografia.mp4" muted loop playsinline></video>
+  </div>
+
+  <div class="video-item">
+    <video src="pense_na_ansiedade_como_eletrecidade.mp4" muted loop playsinline></video>
+  </div>
+</div>
+
+<style>
+  body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.video-item {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+
+  <script>
 const videos = document.querySelectorAll("video");
 
 const observer = new IntersectionObserver((entries) => {
@@ -132,28 +57,25 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.6 // 60% visível já ativa
+  threshold: 0.6 // 60% visível já toca
 });
 
 videos.forEach(video => {
   observer.observe(video);
 });
 </script>
-  
+                                          </script>
 <nav>
     <a href="CPM.html" target="_blank">Anterior</a>
     <a href="publicacoes.html" target="_blank">Seguinte</a>
-    </nav>
+</nav>
+  
   <footer>
     <p>&copy; 2026 - ModeBRAVHLabs | Todos os direitos reservados</p>
   </footer>
-
-        }
-      });
-    });
-  </script>
 </body>
 </html>
+
 
 
 

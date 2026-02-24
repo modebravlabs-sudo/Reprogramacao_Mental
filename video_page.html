@@ -11,6 +11,42 @@
         <a href="publicacoes_interativas.html">Publicações </a>
         <a href="pesquisa.html">🔍</a>
  </nav>
+
+<style>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const container = document.getElementById("videoContainer");
+    const savedVideos = JSON.parse(localStorage.getItem("uploadedVideos")) || [];
+
+    savedVideos.forEach(videoSrc => {
+        const videoItem = document.createElement("div");
+        videoItem.classList.add("video-item");
+
+        const video = document.createElement("video");
+        video.src = videoSrc;
+        video.controls = true;
+        video.playsInline = true;
+
+        videoItem.appendChild(video);
+        container.appendChild(videoItem);
+    });
+
+    const videos = document.querySelectorAll("video");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.play();
+            } else {
+                entry.target.pause();
+            }
+        });
+    }, { threshold: 0.6 });
+
+    videos.forEach(video => observer.observe(video));
+
+});
+</script>
   
 <div class="container" id="videoContainer">
 </div>
@@ -102,37 +138,7 @@ video {
 </style>
 
   <script>
-const container = document.getElementById("videoContainer");
 
-let savedVideos = JSON.parse(localStorage.getItem("uploadedVideos")) || [];
-
-savedVideos.forEach(videoSrc => {
-    const videoItem = document.createElement("div");
-    videoItem.classList.add("video-item");
-
-    const video = document.createElement("video");
-    video.src = videoSrc;
-    video.controls = true;
-    video.playsInline = true;
-
-    videoItem.appendChild(video);
-    container.appendChild(videoItem);
-});
-
-const videos = document.querySelectorAll("video");
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.play();
-    } else {
-      entry.target.pause();
-    }
-  });
-}, { threshold: 0.6 });
-
-videos.forEach(video => observer.observe(video));
-  </script>
                                           </script>
 <nav>
     <a href="CPM.html" target="_blank">Anterior</a>
@@ -144,6 +150,7 @@ videos.forEach(video => observer.observe(video));
   </footer>
 </body>
 </html>
+
 
 
 

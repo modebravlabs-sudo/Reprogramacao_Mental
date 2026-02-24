@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+  <div class="perfil-container">
+
+    <!-- HEADER -->
+    <div class="perfil-header">
+      <img src="https://via.placeholder.com/120" class="avatar">
+      <h2>Nome</h2>
+      <p class="username">username</p>
+
+      <div class="estatisticas">
+        <div><strong>109</strong><span>Seguindo</span></div>
+        <div><strong>11,2 mil</strong><span>Seguidores</span></div>
+        <div><strong>17,3 mil</strong><span>Curtidas</span></div>
+      </div>
+
+      <p class="bio">
+        Melhore seu foco, clareza e direção 💡 <br>
+        Se você quer começar um projeto/negócio mas te falta coragem ou clareza este canal é pra ti.
+      </p>
+
+      <a href="#" class="link">🔗 modebravlabs-sudo.github.io</a>
+
+      <div class="botoes">
+        <button>Editar perfil</button>
+        <button class="outline">Compartilhar</button>
+      </div>
+    </div>
+
+    <!-- GRID DE VÍDEOS -->
+    <div class="grid-videos">
+      <div class="video-card"></div>
+      <div class="video-card"></div>
+      <div class="video-card"></div>
+      <div class="video-card"></div>
+      <div class="video-card"></div>
+      <div class="video-card"></div>
+    </div>
+
+  </div>
+
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.perfil-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.perfil-header {
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.estatisticas {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.estatisticas div {
+  display: flex;
+  flex-direction: column;
+}
+
+.estatisticas span {
+  font-size: 12px;
+  color: gray;
+}
+
+.bio {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.link {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.outline {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.grid-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.video-card {
+  background: #ccc;
+  height: 120px;
+  border-radius: 5px;
+}
+</style>
+
+</body>
+</html>

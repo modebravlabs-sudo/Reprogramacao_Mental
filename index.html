@@ -9,59 +9,52 @@
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="bg-dark text-white text-center py-3">
-  <h1 class="fw-bold">Mente Implacável 🧠</h1>
-  <p>Controle sua mente ou será controlado.</p>
-</header>
+    <body class="bg-dark text-white">
 
-<!-- NAV -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-  <div class="container">
-    <a class="navbar-brand" href="#">ModeBravhLabs</a>
-  </div>
-</nav>
+<!-- HEADER -->
+<header class="text-center py-4 border-bottom">
+  <h1 class="fw-bold">Mente Implacável 🧠</h1>
+  <p class="text-secondary">Controle sua mente ou será controlado.</p>
+</header>
 
 <!-- HERO -->
 <section class="container text-center my-5">
-  <h2 class="fw-bold">Domine sua mente na era digital</h2>
-  <p class="lead">Disciplina, foco e clareza mental para resultados reais.</p>
-  <a href="#pedido" class="btn btn-primary btn-lg">Começar agora</a>
+  <h2 class="fw-bold display-5">Domine foco, disciplina e clareza</h2>
+  <p class="lead">Pare de ser distraído. Comece a executar.</p>
+  <a href="#pedido" class="btn btn-danger btn-lg mt-3">🔥 Quero dominar minha mente</a>
 </section>
 
 <!-- PRODUTOS -->
 <section class="container my-5">
   <div class="row g-4">
 
-    <!-- Ebook 1 -->
     <div class="col-md-4">
-      <div class="card bg-dark text-white h-100">
+      <div class="card bg-black text-white h-100 shadow">
         <img src="Ebook_amostra.jpeg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Controle Mental</h5>
-          <p class="card-text">Reprograme sua mente para alta performance.</p>
+          <h5>Controle Mental</h5>
+          <p>Reprograme sua mente para alta performance.</p>
+          <span class="badge bg-danger">Mais vendido</span>
         </div>
       </div>
     </div>
 
-    <!-- Ebook 2 -->
     <div class="col-md-4">
-      <div class="card bg-dark text-white h-100">
+      <div class="card bg-black text-white h-100 shadow">
         <img src="Ebook_amostra2.jpeg" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Mente Tranquila</h5>
-          <p class="card-text">Paz mental e clareza no caos digital.</p>
+          <h5>Mente Tranquila</h5>
+          <p>Clareza mental no caos digital.</p>
         </div>
       </div>
     </div>
 
-    <!-- Ebook 3 -->
     <div class="col-md-4">
-      <div class="card bg-dark text-white h-100">
+      <div class="card bg-black text-white h-100 shadow">
         <img src="Novo_ebook.png" class="card-img-top">
         <div class="card-body">
-          <h5 class="card-title">Opinião Alheia</h5>
-          <p class="card-text">Pare de travar por julgamento externo.</p>
+          <h5>Opinião Alheia</h5>
+          <p>Pare de travar por julgamento externo.</p>
         </div>
       </div>
     </div>
@@ -69,50 +62,88 @@
   </div>
 </section>
 
-<!-- FORMULÁRIO -->
+<!-- DEPOIMENTOS -->
+<section class="container my-5">
+  <h3 class="text-center mb-4">🔥 Resultados reais</h3>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card bg-secondary p-3">
+        <p>"Minha produtividade dobrou em 1 semana."</p>
+        <strong>- Lucas</strong>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-secondary p-3">
+        <p>"Pare de procrastinar depois desse método."</p>
+        <strong>- Ana</strong>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card bg-secondary p-3">
+        <p>"Clareza mental absurda. Vale muito."</p>
+        <strong>- Marcos</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO + PAGAMENTO -->
 <section id="pedido" class="container my-5">
-  <div class="card p-4 shadow">
-    <h3 class="text-center mb-4">📩 Pedir E-book</h3>
+  <div class="card p-4 bg-light text-dark shadow">
+
+    <h3 class="text-center mb-4">📩 Receber E-book</h3>
 
     <form id="formPedido">
-      
+
       <div class="mb-3">
-        <label class="form-label">Seu nome</label>
+        <label>Nome</label>
         <input type="text" class="form-control" required>
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Seu WhatsApp</label>
+        <label>WhatsApp</label>
         <input type="text" class="form-control" required>
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Escolha o E-book</label>
+        <label>E-book</label>
         <select class="form-select" required>
-          <option value="">Selecione</option>
+          <option value="">Escolha</option>
           <option>Controle Mental</option>
           <option>Mente Tranquila</option>
           <option>Opinião Alheia</option>
         </select>
       </div>
 
-      <button type="submit" class="btn btn-success w-100">
-        Quero meu E-book
+      <div class="mb-3">
+        <label>Forma de pagamento</label>
+        <select class="form-select" required>
+          <option>Pix</option>
+          <option>Cartão</option>
+          <option>Transferência</option>
+        </select>
+      </div>
+
+      <button class="btn btn-success w-100 fw-bold">
+        🚀 Quero acesso imediato
       </button>
 
     </form>
   </div>
 </section>
 
-<!-- BIO -->
-<section class="container text-center my-5">
-  <img src="Profile2.jpg" class="rounded-circle mb-3" width="100">
-  <h4>Henriques João</h4>
-  <p>Desenvolvedor de software e criador de conteúdo focado em mente, disciplina e tecnologia.</p>
+<!-- CTA FINAL -->
+<section class="text-center my-5">
+  <h3>Você decide:</h3>
+  <p>Continuar igual ou assumir controle.</p>
+  <a href="#pedido" class="btn btn-danger btn-lg">Começar agora</a>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white text-center p-3">
+<footer class="text-center p-4 border-top">
   <p>© 2026 ModeBravhLabs</p>
 </footer>
 
@@ -123,14 +154,16 @@ document.getElementById("formPedido").addEventListener("submit", function(e) {
 
   let nome = document.querySelector("input[type=text]").value;
   let whatsapp = document.querySelectorAll("input[type=text]")[1].value;
-  let ebook = document.querySelector("select").value;
+  let ebook = document.querySelectorAll("select")[0].value;
+  let pagamento = document.querySelectorAll("select")[1].value;
 
-  let mensagem = `Olá, meu nome é ${nome}. Quero o e-book: ${ebook}. Meu WhatsApp é ${whatsapp}`;
+  let mensagem = `Nome: ${nome}%0AWhatsApp: ${whatsapp}%0AE-book: ${ebook}%0APagamento: ${pagamento}`;
 
-  let url = `https://wa.me/258876998597?text=${encodeURIComponent(mensagem)}`;
+  let url = `https://wa.me/258876998597?text=${mensagem}`;
 
   window.open(url, "_blank");
 });
 </script>
 
-</body>
+  </body>
+</html>

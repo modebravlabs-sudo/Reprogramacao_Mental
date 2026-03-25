@@ -1,228 +1,190 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modebravhlabs</title>
-  
-  <!-- Fonte e ícones -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Mente Implacável | ModeBravhLabs</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Domine sua mente, foco e disciplina na era digital.">
+  <meta name="author" content="Henriques João">
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-  <header>
-    <div class="Profile">
-     <h1>Mente Implacável🧠</h1>
-    </div>
-  </header>
 
-  <nav>
-    <a href="index.html" target="_blank">Início</a>
-    <a href="CPM.html" target="_blank">Livros</a>
-    <a href="video_page.html" target="_blank">Vídeos</a>
-    <a href="publicacoes_interativas.html" target="_blank">Blog</a>
-    <a href="sobre.html" target="_blank">Sobre</a>
-  </nav>
-
-  <main>
-    <section class="card">
-      <h2>Bem-vindo ao Modebravhlabs</h2>
-      <article>
-        <p><strong>Transforme sua mente em uma máquina de foco, produtividade e equilíbrio mental hoje.</strong></p>
-        <p>Domine a sua mente e seja produtivo com nossos livros, e-books e cursos.</p>
-        <p>Aprenda a criar hábitos saudáveis, evoluir, tornar-se implacável e respeitado.</p>
-        <p><strong>👉 Clique aqui para acessar ebooks e guias exclusivos e turbinar sua mente agora!</strong></p>
-        <a href="CPM.html" class="btn-CPM">Saiba Mais</a>
-      </article>
-    </section>
-
-    <section class="card-cartaz">
-      <img src="cartaz.png" alt="Cartaz Promocional">
-    </section>
-  </main>
-
-  <div class="auth-buttons">
-    <a href="chatbots.html" class="chatbots-btn">💬 Olá</a>
-  </div>
-
-  <footer>
-    <div class="socials">
-      <a href="https://instagram.com/HenryBrain05" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a>
-      <a href="https://www.youtube.com/@henrybrains" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-youtube"></ion-icon></a>
-      <a href="https://www.linkedin.com/in/modebravhlabs-undefined-5204933ab" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a>
-      <a href="https://www.tiktok.com/@henriquesjoao11" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p>&copy; 2026 Modebravhlabs - Todos os direitos reservados.</p>
-  </footer>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: url("CMED_fundo.png") no-repeat center/cover;
+      color: white;
+    }
 
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-image: url("CMED_fundo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
+    header {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+    }
 
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #222;
-  padding: 10px;
-}
+    nav {
+      background: #222;
+    }
 
-.Profile {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-/* Navegação */
-nav {
-  background-color: #444;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  box-shadow: 0px 4px 12px rgba(173, 216, 230, 0.6);
-}
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
+    .btn-main {
+      background: linear-gradient(90deg, #0096ff, #005bbb);
+      border: none;
+      padding: 14px 28px;
+      font-weight: bold;
+      border-radius: 8px;
+      animation: pulse 1.2s infinite;
+    }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-}
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
 
-/* Botão flutuante */
-.chatbots-btn {
-  position: fixed;
-  z-index: 9999;
-  bottom: 20px;
-  right: 20px;
-  background: blue;
-  border-radius: 8px;
-  padding: 12px 20px;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-  animation: pulse 1.2s ease-in-out infinite;
-  cursor: pointer;
-}
+    .card-custom {
+      background: rgba(0,0,0,0.7);
+      border-radius: 12px;
+    }
 
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
+    .chatbots-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: blue;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      animation: pulse 1.2s infinite;
+      text-decoration: none;
+      color: white;
+    }
 
-.chatbots-btn:hover {
-  background: rgb(10, 2, 120);
-}
-
-/* Cards */
-.card {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-align: center;
-  background: rgba(0,0,0,0.6);
-}
-
-.card h2 {
-  margin-bottom: 15px;
-}
-
-.btn-CPM {
-  display: inline-block;
-  padding: 14px 28px;
-  background: linear-gradient(90deg, #0096ff, #005bbb);
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  animation: mover 1s ease-in-out infinite;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-@keyframes mover {
-  0%   { transform: translateY(0) scale(1); }
-  50%  { transform: translateY(-6px) scale(1.05); }
-  100% { transform: translateY(0) scale(1); }
-}
-
-/* Cartaz */
-.card-cartaz {
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 12px;
-}
-
-.card-cartaz img {
-  width: 100%;
-  border-radius: 12px;
-  animation: mover 5s linear infinite alternate;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.socials {
-  margin-bottom: 10px;
-}
-
-.socials a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: row;   /* mantém os links lado a lado */
-    flex-wrap: wrap;       /* permite quebrar linha se não couber */
-    gap: 10px;
-    justify-content: center;
-  }
-  .card {
-    margin: 20px;
-    padding: 15px;
-  }
-}
-
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
+</head>
 
-  <!-- Scripts -->
-  <script src="./script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body>
+
+<header>
+  <h2>Mente Implacável 🧠</h2>
+  <p>Controle sua mente ou será controlado.</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">ModeBravhLabs</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Domine sua mente na era digital</h1>
+  <p>Foco, disciplina e produtividade real.</p>
+  <a href="#produtos" class="btn btn-main">Começar agora</a>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos" class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card card-custom text-white h-100">
+        <img src="Ebook_amostra.jpeg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Controle Mental</h5>
+          <p>Domine seus pensamentos e sua vida.</p>
+          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-custom text-white h-100">
+        <img src="ebook2.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Foco Absoluto</h5>
+          <p>Elimine distrações e produza mais.</p>
+          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-custom text-white h-100">
+        <img src="ebook3.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5>Disciplina Implacável</h5>
+          <p>Construa hábitos fortes e consistentes.</p>
+          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CARTAZ -->
+<section class="container text-center my-5">
+  <img src="cartaz.png" class="img-fluid rounded">
+</section>
+
+<!-- FORM -->
+<section id="pedido" class="container my-5">
+  <div class="card card-custom p-4">
+    <h3 class="text-center mb-4">Solicitar E-book</h3>
+
+    <form>
+      <input class="form-control mb-3" type="text" placeholder="Nome">
+      <input class="form-control mb-3" type="email" placeholder="Email">
+
+      <select class="form-control mb-3">
+        <option>Controle Mental</option>
+        <option>Foco Absoluto</option>
+        <option>Disciplina Implacável</option>
+      </select>
+
+      <button class="btn btn-primary w-100">Finalizar Pedido</button>
+    </form>
+  </div>
+</section>
+
+<!-- BOTÃO -->
+<a href="chatbots.html" class="chatbots-btn">💬 Olá</a>
+
+<!-- FOOTER -->
+<footer>
+  <div class="mb-2">
+    <a href="https://instagram.com/HenryBrain05" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@henrybrains" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+  </div>
+  <p>© 2026 ModeBravhLabs</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

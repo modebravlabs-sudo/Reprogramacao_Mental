@@ -1,37 +1,27 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mente Implacável | ModeBravhLabs</title>
-
-  <!-- SEO -->
   <meta name="description" content="Domine sua mente, foco e disciplina na era digital.">
-  <meta name="author" content="Henriques João">
-
-  <!-- Fonts & Icons -->
+  <!-- Fonts e Bootstrap -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
       background: url("CMED_fundo.png") no-repeat center/cover;
       color: white;
     }
 
     header {
-      background: #111;
+      background: #000;
       text-align: center;
       padding: 20px;
-    }
-
-    nav {
-      background: #222;
     }
 
     .hero {
@@ -39,13 +29,8 @@
       padding: 80px 20px;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
     .btn-main {
-      background: linear-gradient(90deg, #0096ff, #005bbb);
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
       border: none;
       padding: 14px 28px;
       font-weight: bold;
@@ -54,55 +39,62 @@
     }
 
     @keyframes pulse {
-      0% { transform: scale(1); }
       50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
     }
 
     .card-custom {
-      background: rgba(0,0,0,0.7);
+      background: rgba(0,0,0,0.75);
       border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card-custom:hover {
+      transform: translateY(-8px);
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      border: none;
+      font-weight: bold;
     }
 
     .chatbots-btn {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: blue;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      animation: pulse 1.2s infinite;
-      text-decoration: none;
+      background: #25D366;
+      padding: 14px 18px;
+      border-radius: 50%;
+      font-size: 20px;
       color: white;
+      text-decoration: none;
     }
 
     footer {
-      background: #111;
+      background: #000;
       text-align: center;
       padding: 20px;
+      margin-top: 50px;
     }
   </style>
-</head>
-
-<body>
 
 <header>
   <h2>Mente Implacável 🧠</h2>
   <p>Controle sua mente ou será controlado.</p>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#">ModeBravhLabs</a>
-  </div>
-</nav>
-
 <!-- HERO -->
 <section class="hero">
-  <h1>Domine sua mente na era digital</h1>
-  <p>Foco, disciplina e produtividade real.</p>
-  <a href="#produtos" class="btn btn-main">Começar agora</a>
+  <h1>Você não está sem foco.</h1>
+  <h3>Você está sendo distraído.</h3>
+  <p>Recupere controle, disciplina e clareza mental.</p>
+  <a href="#produtos" class="btn btn-main">Quero dominar minha mente</a>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="container text-center my-5">
+  <h4>+1000 pessoas buscando foco e disciplina</h4>
+  <p>Resultados reais começam com decisão.</p>
 </section>
 
 <!-- PRODUTOS -->
@@ -114,8 +106,11 @@
         <img src="Ebook_amostra.jpeg" class="card-img-top">
         <div class="card-body text-center">
           <h5>Controle Mental</h5>
-          <p>Domine seus pensamentos e sua vida.</p>
-          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+          <p>Domine seus pensamentos.</p>
+          <button class="btn whatsapp-btn w-100"
+            onclick="enviarWhats('Controle Mental')">
+            Comprar via WhatsApp
+          </button>
         </div>
       </div>
     </div>
@@ -125,8 +120,11 @@
         <img src="ebook2.jpg" class="card-img-top">
         <div class="card-body text-center">
           <h5>Foco Absoluto</h5>
-          <p>Elimine distrações e produza mais.</p>
-          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+          <p>Elimine distrações.</p>
+          <button class="btn whatsapp-btn w-100"
+            onclick="enviarWhats('Foco Absoluto')">
+            Comprar via WhatsApp
+          </button>
         </div>
       </div>
     </div>
@@ -136,8 +134,11 @@
         <img src="ebook3.jpg" class="card-img-top">
         <div class="card-body text-center">
           <h5>Disciplina Implacável</h5>
-          <p>Construa hábitos fortes e consistentes.</p>
-          <a href="#pedido" class="btn btn-outline-light w-100">Comprar</a>
+          <p>Construa hábitos fortes.</p>
+          <button class="btn whatsapp-btn w-100"
+            onclick="enviarWhats('Disciplina Implacável')">
+            Comprar via WhatsApp
+          </button>
         </div>
       </div>
     </div>
@@ -145,46 +146,50 @@
   </div>
 </section>
 
-<!-- CARTAZ -->
-<section class="container text-center my-5">
-  <img src="cartaz.png" class="img-fluid rounded">
-</section>
+<!-- FORM SIMPLES -->
+<section class="container my-5">
+  <div class="card card-custom p-4 text-center">
+    <h3>Receber no WhatsApp</h3>
+    <p>Preencha e fale direto comigo</p>
 
-<!-- FORM -->
-<section id="pedido" class="container my-5">
-  <div class="card card-custom p-4">
-    <h3 class="text-center mb-4">Solicitar E-book</h3>
+    <input id="nome" class="form-control mb-3" placeholder="Seu nome">
+    <select id="produto" class="form-control mb-3">
+      <option>Controle Mental</option>
+      <option>Foco Absoluto</option>
+      <option>Disciplina Implacável</option>
+    </select>
 
-    <form>
-      <input class="form-control mb-3" type="text" placeholder="Nome">
-      <input class="form-control mb-3" type="email" placeholder="Email">
-
-      <select class="form-control mb-3">
-        <option>Controle Mental</option>
-        <option>Foco Absoluto</option>
-        <option>Disciplina Implacável</option>
-      </select>
-
-      <button class="btn btn-primary w-100">Finalizar Pedido</button>
-    </form>
+    <button class="btn whatsapp-btn w-100" onclick="enviarFormulario()">
+      Falar no WhatsApp
+    </button>
   </div>
 </section>
 
-<!-- BOTÃO -->
-<a href="chatbots.html" class="chatbots-btn">💬 Olá</a>
+<!-- BOTÃO FLUTUANTE -->
+<a href="#" onclick="enviarWhats('Quero saber mais')" class="chatbots-btn">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-<!-- FOOTER -->
 <footer>
-  <div class="mb-2">
-    <a href="https://instagram.com/HenryBrain05" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/@henrybrains" target="_blank"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
   <p>© 2026 ModeBravhLabs</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const numero = "5511999999999"; // COLOCA SEU WHATSAPP AQUI
+
+  function enviarWhats(produto) {
+    const msg = `Olá, tenho interesse no e-book: ${produto}`;
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`);
+  }
+
+  function enviarFormulario() {
+    const nome = document.getElementById("nome").value;
+    const produto = document.getElementById("produto").value;
+
+    const msg = `Olá, meu nome é ${nome} e quero o e-book: ${produto}`;
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(msg)}`);
+  }
+</script>
 
 </body>
 </html>

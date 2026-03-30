@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mente Implacável</title>
@@ -11,238 +13,206 @@
 <style>
 
 body{
-
 font-family:Poppins;
-
-background:
-linear-gradient(180deg,#05060f,#0a0f2c);
-
+background:linear-gradient(180deg,#05060f,#0a0f2c);
 color:white;
-
 }
 
 /* HERO */
 
 .hero{
-
-background:
-radial-gradient(circle at top,
-rgba(0,140,255,0.25),
-transparent 60%);
-
+background:radial-gradient(circle at top,rgba(0,140,255,0.25),transparent 60%);
 padding:100px 20px;
-
 }
 
 /* CARDS */
 
 .card{
-
-background:
-rgba(15,20,60,0.6);
-
+background:rgba(15,20,60,0.6);
 backdrop-filter:blur(10px);
-
-border:
-1px solid rgba(0,140,255,0.3);
-
+border:1px solid rgba(0,140,255,0.3);
 border-radius:20px;
-
 transition:.4s;
-
 }
 
 .card:hover{
-
 transform:translateY(-8px);
-
-box-shadow:
-0 0 25px rgba(0,140,255,0.5);
-
+box-shadow:0 0 25px rgba(0,140,255,0.5);
 }
 
 /* BUTTON */
 
 .btn-premium{
-
-background:
-linear-gradient(90deg,#0066ff,#00c3ff);
-
+background:linear-gradient(90deg,#0066ff,#00c3ff);
 border:none;
-
 padding:15px;
-
 border-radius:12px;
-
 font-weight:600;
-
 letter-spacing:1px;
-
 transition:.4s;
-
 color:white;
-
 }
 
 .btn-premium:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00c3ff;
+}
+
+/* BUY BUTTON */
+
+.btn-buy{
+
+display:block;
+
+text-align:center;
+
+margin-top:15px;
+
+padding:12px;
+
+border-radius:10px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:white;
+
+background:linear-gradient(90deg,#0055ff,#00c8ff);
+
+transition:.4s;
+
+box-shadow:0 0 10px rgba(0,162,255,0.4);
+
+}
+
+.btn-buy:hover{
 
 transform:scale(1.05);
 
-box-shadow:0 0 20px #00c3ff;
+box-shadow:0 0 20px #00c8ff;
+
+}
+
+/* PRICE */
+
+.price{
+
+margin-top:10px;
+
+font-size:18px;
+
+}
+
+.old{
+
+text-decoration:line-through;
+
+color:#8a8a8a;
+
+margin-right:8px;
+
+}
+
+.new{
+
+color:#00e0ff;
+
+font-weight:700;
+
+font-size:22px;
 
 }
 
 /* GOLD TEXT */
 
 .gold{
-
-background:
-linear-gradient(90deg,#7aa8ff,#00e0ff);
-
+background:linear-gradient(90deg,#7aa8ff,#00e0ff);
 -webkit-background-clip:text;
-
 color:transparent;
-
 font-weight:700;
-
 }
 
 /* AUTHORITY */
 
 .authority{
-
-background:
-linear-gradient(90deg,#040614,#0a1a40);
-
+background:linear-gradient(90deg,#040614,#0a1a40);
 padding:60px;
-
 border-radius:20px;
-
-border:
-1px solid rgba(0,140,255,0.2);
-
+border:1px solid rgba(0,140,255,0.2);
 }
 
 /* TELEGRAM */
 
 .telegram{
-
 max-width:520px;
-
 margin:auto;
-
 background:#0e1621;
-
 border-radius:15px;
-
 border:1px solid rgba(0,136,255,0.2);
-
 overflow:hidden;
-
 }
 
 .telegram-header{
-
 background:#17212b;
-
 padding:12px;
-
 display:flex;
-
 align-items:center;
-
 }
 
 .telegram-header img{
-
 width:35px;
-
 margin-right:10px;
-
 }
 
 .telegram-header p{
-
 margin:0;
-
 font-size:12px;
-
 color:#7f91a4;
-
 }
 
 .telegram-chat{
-
 padding:15px;
-
 }
 
 .msg{
-
 display:flex;
-
 margin-bottom:15px;
-
 }
 
 .msg img{
-
 width:34px;
-
 height:34px;
-
 border-radius:50%;
-
 margin-right:10px;
-
 border:2px solid #2aabee;
-
 }
 
 .msg-content{
-
 background:#182533;
-
 padding:10px;
-
 border-radius:10px;
-
 max-width:75%;
-
 border:1px solid rgba(0,136,255,0.15);
-
 }
 
 .msg-name{
-
 font-size:13px;
-
 font-weight:600;
-
 color:#4ea6ff;
-
 }
 
 .msg-name span{
-
 font-size:11px;
-
 color:#7f91a4;
-
 margin-left:6px;
-
 font-weight:400;
-
 }
 
 .msg-content p{
-
 margin:4px 0 0;
-
 font-size:14px;
-
 color:#d6e2f0;
-
 }
 
 </style>
@@ -257,8 +227,7 @@ MENTE IMPLACÁVEL 🧠
 
 <p class="text-secondary">
 
-Elite mental não nasce.
-É construída.
+Elite mental não nasce. É construída.
 
 </p>
 
@@ -269,11 +238,7 @@ Elite mental não nasce.
 <h2 class="display-4 fw-bold">
 
 Domine sua mente como os
-<span class="gold">
-
-top 1%
-
-</span>
+<span class="gold">top 1%</span>
 
 </h2>
 
@@ -285,68 +250,11 @@ disciplina e poder mental.
 
 </p>
 
-<a href="#pedido"
-class="btn btn-premium btn-lg mt-4">
+<a href="#pedido" class="btn btn-premium btn-lg mt-4">
 
 🚀 Quero mentalidade de elite
 
 </a>
-
-</section>
-
-<section class="container my-5">
-
-<div class="row text-center">
-
-<div class="col-md-4">
-
-<h3 class="gold">
-
-+1200
-
-</h3>
-
-<p class="text-secondary">
-
-Leitores impactados
-
-</p>
-
-</div>
-
-<div class="col-md-4">
-
-<h3 class="gold">
-
-93%
-
-</h3>
-
-<p class="text-secondary">
-
-Relataram aumento de foco
-
-</p>
-
-</div>
-
-<div class="col-md-4">
-
-<h3 class="gold">
-
-Alta performance
-
-</h3>
-
-<p class="text-secondary">
-
-Método testado
-
-</p>
-
-</div>
-
-</div>
 
 </section>
 
@@ -368,11 +276,7 @@ Produtos de transformação mental
 
 <div class="card-body">
 
-<h5>
-
-Controle Mental
-
-</h5>
+<h5>Controle Mental</h5>
 
 <p class="text-secondary">
 
@@ -400,11 +304,7 @@ Mais vendido
 
 <div class="card-body">
 
-<h5>
-
-Mente Tranquila
-
-</h5>
+<h5>Mente Tranquila</h5>
 
 <p class="text-secondary">
 
@@ -423,7 +323,6 @@ Clareza mental absoluta.
 <div class="card h-100">
 
 <img src="Novo_ebook.png">
-<a href="https://pay.hotmart.com/P105086821O">Comprar</a>
 
 <div class="card-body">
 
@@ -439,293 +338,39 @@ Pare de viver para os outros.
 
 </p>
 
-</div>
+<div class="price">
+
+<span class="old">
+
+R$97
+
+</span>
+
+<span class="new">
+
+R$29
+
+</span>
 
 </div>
 
-</div>
+<a href="https://pay.hotmart.com/P105086821O"
 
-</div>
+target="_blank"
 
-</section>
+class="btn-buy">
 
-<section class="container my-5">
-
-<div class="authority text-center">
-
-<h2 class="gold">
-
-Sobre o criador
-
-</h2>
-
-<h4>
-
-Henry João
-
-</h4>
-
-<p class="text-secondary">
-
-Desenvolvedor de software,
-criador de produtos digitais
-e pesquisador de mentalidade
-de alta performance.
-
-</p>
-
-<p>
-
-Criando pessoas mentalmente
-fortes para a nova economia digital.
-
-</p>
-
-</div>
-
-</section>
-
-<section class="container my-5">
-
-<h3 class="text-center mb-4">
-
-Resultados dos leitores
-
-</h3>
-
-<div class="telegram">
-
-<div class="telegram-header">
-
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
-
-<div>
-
-<strong>
-
-Mente Implacável VIP
-
-</strong>
-
-<p>
-
-347 membros online
-
-</p>
-
-</div>
-
-</div>
-
-<div class="telegram-chat">
-
-<div class="msg">
-
-<img src="https://i.pravatar.cc/40?img=12">
-
-<div class="msg-content">
-
-<div class="msg-name">
-
-Rafael
-<span>21:14</span>
-
-</div>
-
-<p>
-
-Minha disciplina mudou totalmente.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="msg">
-
-<img src="https://i.pravatar.cc/40?img=22">
-
-<div class="msg-content">
-
-<div class="msg-name">
-
-Carla
-<span>09:32</span>
-
-</div>
-
-<p>
-
-Conteúdo direto e poderoso.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="msg">
-
-<img src="https://i.pravatar.cc/40?img=33">
-
-<div class="msg-content">
-
-<div class="msg-name">
-
-Lucas
-<span>18:05</span>
-
-</div>
-
-<p>
-
-Mentalidade totalmente diferente.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="msg">
-
-<img src="https://i.pravatar.cc/40?img=45">
-
-<div class="msg-content">
-
-<div class="msg-name">
-
-Bruno
-<span>11:47</span>
-
-</div>
-
-<p>
-
-Produtividade dobrou.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="msg">
-
-<img src="https://i.pravatar.cc/40?img=51">
-
-<div class="msg-content">
-
-<div class="msg-name">
-
-Fernanda
-<span>23:02</span>
-
-</div>
-
-<p>
-
-Melhor investimento mental.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="pedido"
-class="container my-5">
-
-<div class="card p-4">
-
-<h3 class="text-center mb-4">
-
-📩 Receber acesso
-
-</h3>
-
-<form id="formPedido">
-
-<input
-placeholder="Seu nome"
-class="form-control mb-3"
-required>
-
-<input
-placeholder="WhatsApp"
-class="form-control mb-3"
-required>
-
-<select class="form-select mb-3">
-
-<option>
-
-Escolha o ebook
-
-</option>
-
-<option>
-
-Controle Mental
-
-</option>
-
-<option>
-
-Mente Tranquila
-
-</option>
-
-<option>
-
-Opinião Alheia
-
-</option>
-
-</select>
-
-<button
-class="btn btn-premium w-100">
-
-🔥 Quero acesso imediato
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<section class="text-center my-5">
-
-<h2>
-
-Sua mente pode ser
-seu maior ativo
-ou sua maior prisão.
-
-</h2>
-
-<p class="text-secondary">
-
-Você decide hoje.
-
-</p>
-
-<a href="#pedido"
-class="btn btn-premium">
-
-COMEÇAR AGORA
+🏅 Comprar agora
 
 </a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -738,25 +383,6 @@ COMEÇAR AGORA
 </p>
 
 </footer>
-
-<script>
-
-document
-.getElementById("formPedido")
-
-.addEventListener(
-
-"submit",
-
-function(e){
-
-e.preventDefault();
-
-alert("Pedido enviado");
-
-});
-
-</script>
 
 </body>
 

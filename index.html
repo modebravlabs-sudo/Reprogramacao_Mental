@@ -1,224 +1,615 @@
 <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mente Implacável</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  </head>
-<body class="bg-dark text-white">
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mente Implacável</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+
+font-family:Poppins;
+background:
+linear-gradient(180deg,#05060f,#0a0f2c);
+
+color:white;
+
+}
+
+/* glow background */
+
+.hero{
+
+background:
+radial-gradient(circle at top,
+rgba(0,140,255,0.2),
+transparent 60%);
+
+padding:100px 20px;
+
+}
+
+/* luxury card */
+
+.card{
+
+background:
+rgba(15,20,60,0.6);
+
+backdrop-filter:blur(10px);
+
+border:
+
+1px solid rgba(0,140,255,0.3);
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 0 25px
+rgba(0,140,255,0.5);
+
+}
+
+/* premium button */
+
+.btn-premium{
+
+background:
+linear-gradient(
+90deg,
+#0066ff,
+#00c3ff);
+
+border:none;
+
+padding:15px;
+
+border-radius:12px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+transition:.4s;
+
+}
+
+.btn-premium:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+
+0 0 20px #00c3ff;
+
+}
+
+/* chat testimonials */
+
+.bubble{
+
+background:
+rgba(20,30,80,0.7);
+
+border-radius:15px;
+
+padding:15px;
+
+border:
+
+1px solid rgba(0,162,255,0.3);
+
+}
+
+.avatar{
+
+border-radius:50%;
+
+border:
+
+2px solid #008cff;
+
+}
+
+/* authority section */
+
+.authority{
+
+background:
+
+linear-gradient(
+90deg,
+#040614,
+#0a1a40);
+
+padding:60px;
+
+border-radius:20px;
+
+border:
+
+1px solid rgba(0,140,255,0.2);
+
+}
+
+/* gold text */
+
+.gold{
+
+background:
+
+linear-gradient(
+90deg,
+#7aa8ff,
+#00e0ff);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+font-weight:700;
+
+}
+
+</style>
+
+</head>
+
+<body>
 
 <!-- HEADER -->
-<header class="text-center py-4 border-bottom">
-  <h1 class="fw-bold">Mente Implacável 🧠</h1>
-  <p class="text-secondary">Controle sua mente ou será controlado.</p>
+
+<header class="text-center p-4">
+
+<h1 class="fw-bold gold">
+
+MENTE IMPLACÁVEL 🧠
+
+</h1>
+
+<p class="text-secondary">
+
+Elite mental não nasce.
+É construída.
+
+</p>
+
 </header>
 
 <!-- HERO -->
-<section class="container text-center my-5">
-  <h2 class="fw-bold display-5">Domine foco, disciplina e clareza</h2>
-  <p class="lead">Pare de ser distraído. Comece a executar.</p>
-  <a href="#pedido" class="btn btn-danger btn-lg mt-3">🔥 Quero dominar minha mente</a>
+
+<section class="hero text-center">
+
+<h2 class="display-4 fw-bold">
+
+Domine sua mente
+como os <span class="gold">
+top 1%
+</span>
+
+</h2>
+
+<p class="lead text-secondary">
+
+Enquanto a maioria vive distraída,
+uma minoria constrói riqueza,
+disciplina e poder mental.
+
+A diferença é mentalidade.
+
+</p>
+
+<a href="#pedido"
+class="btn btn-premium btn-lg mt-4">
+
+🚀 Quero mentalidade de elite
+
+</a>
+
 </section>
 
-<!-- PRODUTOS -->
+<!-- VALUE SECTION -->
+
 <section class="container my-5">
-  <div class="row g-4">
 
-    <div class="col-md-4">
-      <div class="card bg-black text-white h-100 shadow">
-        <img src="Ebook_amostra.jpeg" class="card-img-top">
-        <div class="card-body">
-          <h5>Controle Mental</h5>
-          <p>Reprograme sua mente para alta performance.</p>
-          <span class="badge bg-danger">Mais vendido</span>
-        </div>
-      </div>
-    </div>
+<div class="row text-center">
 
-    <div class="col-md-4">
-      <div class="card bg-black text-white h-100 shadow">
-        <img src="Ebook_amostra2.jpeg" class="card-img-top">
-        <div class="card-body">
-          <h5>Mente Tranquila</h5>
-          <p>Clareza mental no caos digital.</p>
-        </div>
-      </div>
-    </div>
+<div class="col-md-4">
 
-    <div class="col-md-4">
-      <div class="card bg-black text-white h-100 shadow">
-        <img src="Novo_ebook.png" class="card-img-top">
-        <div class="card-body">
-          <h5>Opinião Alheia</h5>
-          <p>Pare de travar por julgamento externo.</p>
-        </div>
-      </div>
-    </div>
+<h3 class="gold">
++1200
+</h3>
 
-  </div>
+<p class="text-secondary">
+
+Leitores impactados
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h3 class="gold">
+
+93%
+
+</h3>
+
+<p class="text-secondary">
+
+Aumento de foco reportado
+
+</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h3 class="gold">
+
+Top Mindset
+
+</h3>
+
+<p class="text-secondary">
+
+Método inspirado em alta performance
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- DEPOIMENTOS ESTILO CHAT -->
+<!-- PRODUCTS -->
+
+<section class="container">
+
+<h2 class="text-center mb-5 fw-bold">
+
+Produtos de transformação mental
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card h-100">
+
+<img src="Ebook_amostra.jpeg">
+
+<div class="card-body">
+
+<h5>
+
+Controle Mental
+
+</h5>
+
+<p class="text-secondary">
+
+Como eliminar distrações e
+criar disciplina de milionário.
+
+</p>
+
+<span class="badge bg-primary">
+
+Mais vendido
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100">
+
+<img src="Ebook_amostra2.jpeg">
+
+<div class="card-body">
+
+<h5>
+
+Mente Tranquila
+
+</h5>
+
+<p class="text-secondary">
+
+Domine ansiedade e tenha clareza absoluta.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card h-100">
+
+<img src="Novo_ebook.png">
+
+<div class="card-body">
+
+<h5>
+
+Opinião Alheia
+
+</h5>
+
+<p class="text-secondary">
+
+Pare de viver pela aprovação dos outros.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AUTHORITY -->
+
 <section class="container my-5">
-  <h3 class="text-center mb-4">🔥 O que estão dizendo</h3>
 
-  <div class="chat-box">
+<div class="authority text-center">
 
-    <div class="chat-message">
-      <img src="https://i.pravatar.cc/50?img=1" class="avatar">
-      <div class="bubble">
-        <strong>Lucas</strong>
-        <p>Mano, minha produtividade mudou totalmente depois desse ebook.</p>
-      </div>
-    </div>
+<h2 class="gold">
 
-    <div class="chat-message">
-      <img src="https://i.pravatar.cc/50?img=2" class="avatar">
-      <div class="bubble">
-        <strong>Ana</strong>
-        <p>Eu procrastinava MUITO… agora tenho controle real.</p>
-      </div>
-    </div>
+Sobre o criador
 
-    <div class="chat-message">
-      <img src="https://i.pravatar.cc/50?img=3" class="avatar">
-      <div class="bubble">
-        <strong>Marcos</strong>
-        <p>Clareza mental absurda. Parece que desbloqueei outro nível.</p>
-      </div>
-    </div>
+</h2>
 
-  </div>
+<h4>
+
+Henry João
+
+</h4>
+
+<p class="text-secondary">
+
+Desenvolvedor de software,
+criador de sistemas digitais
+e estudioso obsessivo
+de psicologia de performance.
+
+</p>
+
+<p>
+
+Minha missão é criar
+uma geração mentalmente forte,
+disciplinada e impossível de parar.
+
+</p>
+
+</div>
+
 </section>
 
-<!-- FORMULÁRIO -->
-<section id="pedido" class="container my-5">
-  <div class="card p-4 bg-light text-dark shadow">
+<!-- TESTIMONIALS -->
 
-    <h3 class="text-center mb-4">📩 Receber E-book</h3>
+<section class="container my-5">
 
-    <form id="formPedido">
+<h3 class="text-center mb-5">
 
-      <div class="mb-3">
-        <label>Nome</label>
-        <input type="text" class="form-control" required>
-      </div>
+Resultados reais
 
-      <div class="mb-3">
-        <label>WhatsApp</label>
-        <input type="text" class="form-control" required>
-      </div>
+</h3>
 
-      <div class="mb-3">
-        <label>E-book</label>
-        <select class="form-select" required>
-          <option value="">Escolha</option>
-          <option>Controle Mental</option>
-          <option>Mente Tranquila</option>
-          <option>Opinião Alheia</option>
-        </select>
-      </div>
+<div class="chat-box">
 
-      <div class="mb-3">
-        <label>Forma de pagamento</label>
-        <select class="form-select" required>
-          <option>Pix</option>
-          <option>Cartão</option>
-          <option>Transferência</option>
-        </select>
-      </div>
+<div class="d-flex mb-3">
 
-      <button class="btn btn-success w-100 fw-bold">
-        🚀 Quero acesso imediato
-      </button>
+<img src="https://i.pravatar.cc/50?img=5"
+class="avatar me-3">
 
-    </form>
-  </div>
+<div class="bubble">
+
+<strong>
+
+Rafael • Empreendedor
+
+</strong>
+
+<p>
+
+Parecia conteúdo de gente milionária.
+Mudou minha mentalidade.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="d-flex mb-3">
+
+<img src="https://i.pravatar.cc/50?img=6"
+class="avatar me-3">
+
+<div class="bubble">
+
+<strong>
+
+Carla • Designer
+
+</strong>
+
+<p>
+
+Nunca vi algo tão direto.
+Sem motivação falsa.
+
+Só mentalidade real.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- SOBRE MIM -->
-<section class="container text-center my-5">
-  <h4 class="fw-bold">Henry João</h4>
+<!-- FORM -->
 
-  <p class="text-secondary">
-    Desenvolvedor de software e profissional na área de saúde, dedicado ao estudo da mente e comportamento humano.
-  </p>
+<section id="pedido"
+class="container my-5">
 
-  <p>
-    Atuo na interseção entre tecnologia, disciplina mental e alta performance,
-    criando sistemas, conteúdos e produtos digitais que ajudam pessoas a
-    dominar foco, pensamento e execução na era digital.
-  </p>
+<div class="card p-4">
+
+<h3 class="text-center mb-4">
+
+📩 Receber acesso
+
+</h3>
+
+<form id="formPedido">
+
+<input
+placeholder="Seu nome"
+class="form-control mb-3"
+required>
+
+<input
+placeholder="WhatsApp"
+class="form-control mb-3"
+required>
+
+<select class="form-select mb-3">
+
+<option>
+
+Escolha o ebook
+
+</option>
+
+<option>
+
+Controle Mental
+
+</option>
+
+<option>
+
+Mente Tranquila
+
+</option>
+
+<option>
+
+Opinião Alheia
+
+</option>
+
+</select>
+
+<button
+class="btn btn-premium w-100">
+
+🔥 Quero acesso imediato
+
+</button>
+
+</form>
+
+</div>
+
 </section>
 
-<!-- CTA FINAL -->
+<!-- FINAL CTA -->
+
 <section class="text-center my-5">
-  <h3>Você decide:</h3>
-  <p>Continuar igual ou assumir controle.</p>
-  <a href="#pedido" class="btn btn-danger btn-lg">Começar agora</a>
+
+<h2>
+
+Sua mente pode ser
+seu maior ativo
+ou sua maior prisão.
+
+</h2>
+
+<p class="text-secondary">
+
+Você decide hoje.
+
+</p>
+
+<a href="#pedido"
+class="btn btn-premium">
+
+COMEÇAR AGORA
+
+</a>
+
 </section>
 
-<!-- FOOTER -->
-<footer class="text-center p-4 border-top">
-  <p>© 2026 ModeBravhLabs</p>
+<footer class="text-center p-4">
+
+<p class="text-secondary">
+
+© ModeBravhLabs
+
+</p>
+
 </footer>
 
-<!-- CSS EXTRA -->
-<style>
-.chat-box {
-  max-width: 600px;
-  margin: auto;
-}
-
-.chat-message {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 15px;
-}
-
-.avatar {
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.bubble {
-  background: #2b2b2b;
-  padding: 10px 15px;
-  border-radius: 15px;
-  max-width: 75%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-.bubble strong {
-  font-size: 0.9rem;
-  color: #ff4d4d;
-}
-
-.bubble p {
-  margin: 5px 0 0;
-  font-size: 0.9rem;
-}
-</style>
-
-<!-- SCRIPT -->
 <script>
-document.getElementById("formPedido").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  let nome = document.querySelector("input[type=text]").value;
-  let whatsapp = document.querySelectorAll("input[type=text]")[1].value;
-  let ebook = document.querySelectorAll("select")[0].value;
-  let pagamento = document.querySelectorAll("select")[1].value;
+document
+.getElementById("formPedido")
 
-  let mensagem = `Nome: ${nome}%0AWhatsApp: ${whatsapp}%0AE-book: ${ebook}%0APagamento: ${pagamento}`;
+.addEventListener(
+"submit",
 
-  let url = `https://wa.me/258876998597?text=${mensagem}`;
+function(e){
 
-  window.open(url, "_blank");
+e.preventDefault();
+
+alert(
+"Pedido enviado"
+);
+
 });
+
 </script>
 
-  </body>
+</body>
+
 </html>

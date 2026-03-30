@@ -13,6 +13,7 @@
 body{
 
 font-family:Poppins;
+
 background:
 linear-gradient(180deg,#05060f,#0a0f2c);
 
@@ -20,20 +21,20 @@ color:white;
 
 }
 
-/* glow background */
+/* HERO */
 
 .hero{
 
 background:
 radial-gradient(circle at top,
-rgba(0,140,255,0.2),
+rgba(0,140,255,0.25),
 transparent 60%);
 
 padding:100px 20px;
 
 }
 
-/* luxury card */
+/* CARDS */
 
 .card{
 
@@ -43,7 +44,6 @@ rgba(15,20,60,0.6);
 backdrop-filter:blur(10px);
 
 border:
-
 1px solid rgba(0,140,255,0.3);
 
 border-radius:20px;
@@ -57,21 +57,16 @@ transition:.4s;
 transform:translateY(-8px);
 
 box-shadow:
-
-0 0 25px
-rgba(0,140,255,0.5);
+0 0 25px rgba(0,140,255,0.5);
 
 }
 
-/* premium button */
+/* BUTTON */
 
 .btn-premium{
 
 background:
-linear-gradient(
-90deg,
-#0066ff,
-#00c3ff);
+linear-gradient(90deg,#0066ff,#00c3ff);
 
 border:none;
 
@@ -85,76 +80,24 @@ letter-spacing:1px;
 
 transition:.4s;
 
+color:white;
+
 }
 
 .btn-premium:hover{
 
 transform:scale(1.05);
 
-box-shadow:
-
-0 0 20px #00c3ff;
+box-shadow:0 0 20px #00c3ff;
 
 }
 
-/* chat testimonials */
-
-.bubble{
-
-background:
-rgba(20,30,80,0.7);
-
-border-radius:15px;
-
-padding:15px;
-
-border:
-
-1px solid rgba(0,162,255,0.3);
-
-}
-
-.avatar{
-
-border-radius:50%;
-
-border:
-
-2px solid #008cff;
-
-}
-
-/* authority section */
-
-.authority{
-
-background:
-
-linear-gradient(
-90deg,
-#040614,
-#0a1a40);
-
-padding:60px;
-
-border-radius:20px;
-
-border:
-
-1px solid rgba(0,140,255,0.2);
-
-}
-
-/* gold text */
+/* GOLD TEXT */
 
 .gold{
 
 background:
-
-linear-gradient(
-90deg,
-#7aa8ff,
-#00e0ff);
+linear-gradient(90deg,#7aa8ff,#00e0ff);
 
 -webkit-background-clip:text;
 
@@ -164,10 +107,145 @@ font-weight:700;
 
 }
 
+/* AUTHORITY */
+
+.authority{
+
+background:
+linear-gradient(90deg,#040614,#0a1a40);
+
+padding:60px;
+
+border-radius:20px;
+
+border:
+1px solid rgba(0,140,255,0.2);
+
+}
+
+/* TELEGRAM */
+
+.telegram{
+
+max-width:520px;
+
+margin:auto;
+
+background:#0e1621;
+
+border-radius:15px;
+
+border:1px solid rgba(0,136,255,0.2);
+
+overflow:hidden;
+
+}
+
+.telegram-header{
+
+background:#17212b;
+
+padding:12px;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.telegram-header img{
+
+width:35px;
+
+margin-right:10px;
+
+}
+
+.telegram-header p{
+
+margin:0;
+
+font-size:12px;
+
+color:#7f91a4;
+
+}
+
+.telegram-chat{
+
+padding:15px;
+
+}
+
+.msg{
+
+display:flex;
+
+margin-bottom:15px;
+
+}
+
+.msg img{
+
+width:34px;
+
+height:34px;
+
+border-radius:50%;
+
+margin-right:10px;
+
+border:2px solid #2aabee;
+
+}
+
+.msg-content{
+
+background:#182533;
+
+padding:10px;
+
+border-radius:10px;
+
+max-width:75%;
+
+border:1px solid rgba(0,136,255,0.15);
+
+}
+
+.msg-name{
+
+font-size:13px;
+
+font-weight:600;
+
+color:#4ea6ff;
+
+}
+
+.msg-name span{
+
+font-size:11px;
+
+color:#7f91a4;
+
+margin-left:6px;
+
+font-weight:400;
+
+}
+
+.msg-content p{
+
+margin:4px 0 0;
+
+font-size:14px;
+
+color:#d6e2f0;
+
+}
+
 </style>
-
-
-<!-- HEADER -->
 
 <header class="text-center p-4">
 
@@ -186,15 +264,15 @@ Elite mental não nasce.
 
 </header>
 
-<!-- HERO -->
-
 <section class="hero text-center">
 
 <h2 class="display-4 fw-bold">
 
-Domine sua mente
-como os <span class="gold">
+Domine sua mente como os
+<span class="gold">
+
 top 1%
+
 </span>
 
 </h2>
@@ -204,8 +282,6 @@ top 1%
 Enquanto a maioria vive distraída,
 uma minoria constrói riqueza,
 disciplina e poder mental.
-
-A diferença é mentalidade.
 
 </p>
 
@@ -218,8 +294,6 @@ class="btn btn-premium btn-lg mt-4">
 
 </section>
 
-<!-- VALUE SECTION -->
-
 <section class="container my-5">
 
 <div class="row text-center">
@@ -227,7 +301,9 @@ class="btn btn-premium btn-lg mt-4">
 <div class="col-md-4">
 
 <h3 class="gold">
+
 +1200
+
 </h3>
 
 <p class="text-secondary">
@@ -248,7 +324,7 @@ Leitores impactados
 
 <p class="text-secondary">
 
-Aumento de foco reportado
+Relataram aumento de foco
 
 </p>
 
@@ -258,13 +334,13 @@ Aumento de foco reportado
 
 <h3 class="gold">
 
-Top Mindset
+Alta performance
 
 </h3>
 
 <p class="text-secondary">
 
-Método inspirado em alta performance
+Método testado
 
 </p>
 
@@ -273,8 +349,6 @@ Método inspirado em alta performance
 </div>
 
 </section>
-
-<!-- PRODUCTS -->
 
 <section class="container">
 
@@ -302,8 +376,7 @@ Controle Mental
 
 <p class="text-secondary">
 
-Como eliminar distrações e
-criar disciplina de milionário.
+Disciplina e foco extremo.
 
 </p>
 
@@ -335,7 +408,7 @@ Mente Tranquila
 
 <p class="text-secondary">
 
-Domine ansiedade e tenha clareza absoluta.
+Clareza mental absoluta.
 
 </p>
 
@@ -361,7 +434,7 @@ Opinião Alheia
 
 <p class="text-secondary">
 
-Pare de viver pela aprovação dos outros.
+Pare de viver para os outros.
 
 </p>
 
@@ -374,8 +447,6 @@ Pare de viver pela aprovação dos outros.
 </div>
 
 </section>
-
-<!-- AUTHORITY -->
 
 <section class="container my-5">
 
@@ -396,53 +467,48 @@ Henry João
 <p class="text-secondary">
 
 Desenvolvedor de software,
-criador de sistemas digitais
-e estudioso obsessivo
-de psicologia de performance.
+criador de produtos digitais
+e pesquisador de mentalidade
+de alta performance.
 
 </p>
 
 <p>
 
-Minha missão é criar
-uma geração mentalmente forte,
-disciplinada e impossível de parar.
+Criando pessoas mentalmente
+fortes para a nova economia digital.
 
 </p>
 
 </div>
 
 </section>
-
-<!-- TESTIMONIALS -->
 
 <section class="container my-5">
 
-<h3 class="text-center mb-5">
+<h3 class="text-center mb-4">
 
-Resultados reais
+Resultados dos leitores
 
 </h3>
 
-<div class="chat-box">
+<div class="telegram">
 
-<div class="d-flex mb-3">
+<div class="telegram-header">
 
-<img src="https://i.pravatar.cc/50?img=5"
-class="avatar me-3">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
 
-<div class="bubble">
+<div>
 
 <strong>
 
-Rafael • Empreendedor
+Mente Implacável VIP
 
 </strong>
 
 <p>
 
-Parecia conteúdo de gente milionária.
-Mudou minha mentalidade.
+347 membros online
 
 </p>
 
@@ -450,27 +516,120 @@ Mudou minha mentalidade.
 
 </div>
 
-<div class="d-flex mb-3">
+<div class="telegram-chat">
 
-<img src="https://i.pravatar.cc/50?img=6"
-class="avatar me-3">
+<div class="msg">
 
-<div class="bubble">
+<img src="https://i.pravatar.cc/40?img=12">
 
-<strong>
+<div class="msg-content">
 
-Carla • Designer
+<div class="msg-name">
 
-</strong>
+Rafael
+<span>21:14</span>
+
+</div>
 
 <p>
 
-Nunca vi algo tão direto.
-Sem motivação falsa.
-
-Só mentalidade real.
+Minha disciplina mudou totalmente.
 
 </p>
+
+</div>
+
+</div>
+
+<div class="msg">
+
+<img src="https://i.pravatar.cc/40?img=22">
+
+<div class="msg-content">
+
+<div class="msg-name">
+
+Carla
+<span>09:32</span>
+
+</div>
+
+<p>
+
+Conteúdo direto e poderoso.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="msg">
+
+<img src="https://i.pravatar.cc/40?img=33">
+
+<div class="msg-content">
+
+<div class="msg-name">
+
+Lucas
+<span>18:05</span>
+
+</div>
+
+<p>
+
+Mentalidade totalmente diferente.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="msg">
+
+<img src="https://i.pravatar.cc/40?img=45">
+
+<div class="msg-content">
+
+<div class="msg-name">
+
+Bruno
+<span>11:47</span>
+
+</div>
+
+<p>
+
+Produtividade dobrou.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="msg">
+
+<img src="https://i.pravatar.cc/40?img=51">
+
+<div class="msg-content">
+
+<div class="msg-name">
+
+Fernanda
+<span>23:02</span>
+
+</div>
+
+<p>
+
+Melhor investimento mental.
+
+</p>
+
+</div>
 
 </div>
 
@@ -479,8 +638,6 @@ Só mentalidade real.
 </div>
 
 </section>
-
-<!-- FORM -->
 
 <section id="pedido"
 class="container my-5">
@@ -546,8 +703,6 @@ class="btn btn-premium w-100">
 
 </section>
 
-<!-- FINAL CTA -->
-
 <section class="text-center my-5">
 
 <h2>
@@ -589,15 +744,14 @@ document
 .getElementById("formPedido")
 
 .addEventListener(
+
 "submit",
 
 function(e){
 
 e.preventDefault();
 
-alert(
-"Pedido enviado"
-);
+alert("Pedido enviado");
 
 });
 
